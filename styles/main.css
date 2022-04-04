@@ -1,0 +1,228 @@
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+.btn-pink {
+   background: linear-gradient(to right, #F691A3, #EB757E, #EB757E, #F691A3);
+   background-position: left;
+   background-size: 320%;
+   box-shadow: 0px 16px 40px rgba(235, 117, 126, 0.3);
+   border-radius: 50px;
+   color: white !important;
+   font-family: 'Poppins';
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   padding: 12px 42px 12px !important;
+   transition: all 0.3s ease-in-out;
+} .btn-pink:hover {
+   background-position: right;
+   font-size: 19px;
+}
+
+.navbar {
+   height: 120px;
+}
+
+.navbar .container-fluid {
+   padding: 0 5rem 0 !important;
+}
+
+.navbar-brand {
+   font-family: 'Playfair Display', serif !important;
+   font-size: 40px;
+   color: white !important;
+}
+
+.navbar-brand span {
+   color: #EB757E !important;
+}
+
+.navbar-nav a {
+   color: #1C1C1C !important;
+   font-size: 18px;
+   font-weight: 500;
+   transition: all 0.2s ease-in-out;
+} .navbar-nav a:hover {
+   font-size: 18.5px;
+}
+
+.navbar-nav a.active::after {
+   content: "";
+   width: 30%;
+   border-bottom: 4px solid #E76E77;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.navbar-nav-left li {
+   margin-right: 120px;
+}
+
+.hero {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   z-index: -1;
+}
+
+.hero-left {
+   position: relative;
+   padding: 0;
+   overflow: hidden;
+}
+
+.blue-overlay {
+   position: relative;
+   background: linear-gradient(178.69deg, rgba(56, 99, 135, 0.94) 1.12%, rgba(42, 78, 109, 0.8) 98.88%);
+   height: 800px;
+}
+
+.carousel {
+   position: absolute;
+   margin-left: -30%;
+   z-index: -10;
+}
+
+.carousel-item img {
+   height: 800px;
+   filter: grayscale(80%);
+}
+
+.carousel-control-container {
+   position: absolute;
+   top: auto; left: 0; bottom: 0; right: 0;
+   margin: 0 auto 0;
+   width: fit-content;
+   z-index: 10;
+}
+
+.carousel-control-container i {
+   color: rgba(255, 255, 255, 0.6);
+   font-size: 40px;
+   transition: all .3s ease-in-out;
+}
+.carousel-control-container .btn-prev:hover i,
+.carousel-control-container .btn-next:hover i {
+   color: rgba(255, 255, 255, 0.96);
+}
+
+.btn-prev,
+.btn-next {
+   padding: 0;
+}
+
+.kendal-map {
+   position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+   margin: auto;
+   width: 200px;
+}
+
+.hero-center {
+   position: relative;
+   margin-top: 160px;
+   z-index: 100;
+}
+
+.hero-title {
+   font-family: 'Playfair Display', sans-serif;
+   font-size: 56px;
+}
+
+.hero-text {
+   font-size: 18px;
+   line-height: 27px;
+}
+
+.btn-hero-down {
+   font-size: 28px;
+   padding: 12px 17px 12px !important;
+} .btn-hero-down:hover {
+   font-size: 30px;
+}
+
+.hero-right {
+   margin-top: 158px;
+   padding: 0;
+   overflow: hidden;
+   filter: drop-shadow(0px 16px 40px rgba(0, 0, 0, 0.15));
+}
+
+.hero-image {
+   border-radius: 1600px 0 0 1600px;
+   object-fit: cover;
+   width: 160%;
+}
+
+.hero-route {
+   position: absolute;
+   top: 0; left: 0; bottom: 0; right: 0;
+   width: 100%;
+   padding: 180px 26vw 0 0;
+   text-align: end;
+}
+
+
+
+/* BREAKPOINTS */
+
+/* [XXL] Extra Extra large devices | 1400px < | */
+@media only screen and (min-width: 1400px) {}
+
+/* [XL] Extra large devices (large laptops and desktops) | < 1400px | */
+@media only screen and (max-width: 1400px) {}
+
+/* [LG] Large devices (laptops/desktops) | < 1200px | */
+@media only screen and (max-width: 1200px) {
+   .hero-route {
+      padding: 180px 22vw 0 0;
+   }
+}
+
+/* [MD] Medium devices (landscape tablets) | < 992px | */
+@media only screen and (max-width: 992px) {
+   .navbar {
+      height: 100px;
+      padding-top: 0;
+      padding-bottom: 0;
+      align-items: unset;
+   }
+
+   .navbar .container-fluid {
+      padding: 0 2rem 0 !important;
+      background: linear-gradient(90.19deg, #386387 0.14%, #2A4E6D 99.82%);
+   }
+
+   .navbar-nav-left li {
+      margin-right: 0;
+   }
+
+   .navbar-toggler {
+      border: none;
+   } .navbar-toggler:focus {
+      box-shadow: none;
+   }
+
+   .navbar-toggler i,
+   .navbar-nav-left a {
+      color: white !important;
+   }
+
+   .hero .container-fluid {
+      padding: 0 2rem 0 !important;
+   }
+
+   .hero-image-small {
+      width: 90%;
+      filter: drop-shadow(0px 16px 40px rgba(0, 0, 0, 0.15));
+   }
+   
+}
+
+/* [SM] Small devices (portrait tablets and large phones) | < 768px | */
+@media only screen and (max-width: 768px) {}
+
+/* [XS] Extra small devices (phones) | < 576px | */
+@media only screen and (max-width: 576px) {}
