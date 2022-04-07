@@ -31,6 +31,8 @@ body {
    font-size: 19px;
 }
 
+
+/* Begin: NAVBAR */
 .navbar {
    height: 120px;
 }
@@ -39,13 +41,13 @@ body {
    padding: 0 5rem 0 !important;
 }
 
-.navbar-brand {
+.kendal-logo {
    font-family: 'Playfair Display', serif !important;
    font-size: 40px;
    color: white !important;
 }
 
-.navbar-brand span {
+.kendal-logo span {
    color: #EB757E !important;
 }
 
@@ -70,6 +72,9 @@ body {
 .navbar-nav-left li {
    margin-right: 120px !important;
 }
+/* End: NAVBAR */
+
+
 
 .container-main {
    position: absolute;
@@ -78,6 +83,9 @@ body {
    z-index: -1;
 }
 
+
+
+/* Begin: HERO */
 .hero-left {
    position: relative;
    padding: 0;
@@ -149,6 +157,7 @@ body {
 
 .btn-hero-down {
    font-size: 28px;
+   width: fit-content;
    padding: 12px 17px 12px !important;
 } .btn-hero-down:hover {
    font-size: 30px;
@@ -178,12 +187,14 @@ body {
    padding: 180px 26vw 0 0;
    text-align: end;
 }
+/* End: HERO */
 
 
 
-/* WISATA */
+/* Begin: DESTINASI WISATA */
 .wisata {
    background: #F9F9F9;
+   padding-bottom: 280px;
 }
 
 .wisata h1 {
@@ -255,6 +266,55 @@ body {
    font-size: 16px;
    font-weight: 400;
 }
+/* End: DESTINASI WISATA */
+
+
+
+/* Begin: FOOTER */
+.footer {
+   position: relative;
+   background: linear-gradient(90.19deg, #386387 0.14%, #2A4E6D 99.82%);
+}
+.footer-main{
+   padding-top: 70px;
+   padding-bottom: 90px;
+}
+.footer-border-top {
+   position: absolute;
+   top: 0;
+   margin-top: -3px;
+   border-top: 6px solid #E76E77;
+   border-radius: 60px;
+}
+.footer-main-text {
+   color: white;
+   font-size: 18px;
+   line-height: 27px;
+}
+.footer-link {
+   color: white !important;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   text-decoration: none;
+   transition: .3s all ease-in-out;
+} .footer-link:hover {
+   color: #E76E77 !important;
+}
+
+.footer-copyright {
+   background: #24435E;
+   color: #EB757E;
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   font-weight: 500;
+   padding-top: 26px;
+   padding-bottom: 26px;
+}
+.footer-copyright span {
+   color: white;
+}
+/* End: FOOTER */
 
 
 
