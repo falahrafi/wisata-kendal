@@ -19,7 +19,7 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+   <nav class="navbar navbar-expand-md navbar-light bg-transparent">
       <div class="container-fluid">
          <a class="navbar-brand kendal-logo col-lg-3" href="#">
             k<span>e</span>ndal<span>.</span>
@@ -28,7 +28,7 @@
             <i class="fa-solid fa-bars-staggered"></i>
          </button>
          <div class="collapse navbar-collapse col-lg-8 offset-lg-1 py-4 py-lg-0" id="navbarNav">
-            <ul class="navbar-nav navbar-nav-left align-items-center">
+            <ul class="navbar-nav navbar-nav-left align-items-center ms-md-auto ms-lg-0">
                <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                </li>
@@ -39,7 +39,7 @@
                   <a class="nav-link" href="#">About</a>
                </li>
             </ul>
-            <ul class="navbar-nav align-items-center ms-auto">
+            <ul class="navbar-nav align-items-center ms-lg-auto">
                <li class="nav-item">
                   <button class="nav-link btn btn-pink" href="">Contact</button>
                </li>
@@ -48,79 +48,151 @@
       </div>
    </nav>
 
-   <section class="hero">
-      <div class="container-fluid">
-         <div class="row">
+   <div class="container-main">
 
-            <div class="hero-left col-lg-3 d-none d-lg-block">
-               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <img src="assets/images/curug-sewu.jpg" class="" alt="...">
+      <!-- HERO -->
+      <section id="hero" class="hero">
+         <div class="container-fluid">
+            <div class="row">
+
+               <div class="hero-left col-lg-3 d-none d-lg-block">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="assets/images/curug-sewu.jpg" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="assets/images/kali-bladon.jpg" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="assets/images/pantai-ngebum.jpg" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="assets/images/danau-banaran.jpg" class="" alt="...">
+                        </div>
                      </div>
-                     <div class="carousel-item">
-                        <img src="assets/images/kali-bladon.jpg" class="" alt="...">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="assets/images/pantai-ngebum.jpg" class="" alt="...">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="assets/images/danau-banaran.jpg" class="" alt="...">
+                  </div>
+
+                  <div class="blue-overlay">
+                     <img src="assets/images/kendal-map.png" alt="" class="kendal-map">
+                     <div class="carousel-control-container mb-5">
+                        <a class="btn btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                           <i class="fa-solid fa-circle-chevron-left" aria-hidden="true"></i>
+                           <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="btn btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                           <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                           <span class="visually-hidden">Next</span>
+                        </a>
                      </div>
                   </div>
                </div>
 
-               <div class="blue-overlay">
-                  <img src="assets/images/kendal-map.png" alt="" class="kendal-map">
-                  <div class="carousel-control-container mb-5">
-                     <a class="btn btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i class="fa-solid fa-circle-chevron-left" aria-hidden="true"></i>
-                        <span class="visually-hidden">Previous</span>
-                     </a>
-                     <a class="btn btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
-                        <span class="visually-hidden">Next</span>
-                     </a>
-                  </div>
+               <div class="hero-center col-lg-3 offset-lg-1 pe-lg-5">
+
+                  <h1 class="hero-title">
+                     Explore Kendal
+                  </h1>
+
+                  <p class="hero-text mt-4">
+                     Jelajahi berbagai wisata menarik dengan biaya terjangkau.
+                  </p>
+
+                  <!-- Button LG < -->
+                  <button class="btn btn-pink btn-hero-down mt-5 d-none d-lg-block">
+                     <i class="fa-solid fa-arrow-down"></i>
+                  </button>
+
+                  <!-- Button < LG -->
+                  <button class="btn btn-pink mt-4 d-lg-none">
+                     Pilih Destinasi &nbsp
+                     <i class="fa-solid fa-right-long"></i>
+                  </button>
+
+                  <img src="assets/images/pantai-2.png" alt="" class="hero-image-small d-lg-none">
+
                </div>
-            </div>
 
-            <div class="hero-center col-lg-3 offset-lg-1 pe-lg-5">
-
-               <h1 class="hero-title">
-                  Explore Kendal
-               </h1>
-
-               <p class="hero-text mt-4">
-                  Jelajahi berbagai wisata menarik dengan biaya terjangkau.
-               </p>
-
-               <!-- Button LG < -->
-               <button class="btn btn-pink btn-hero-down mt-5 d-none d-lg-block">
-                  <i class="fa-solid fa-arrow-down"></i>
-               </button>
-
-               <!-- Button < LG -->
-               <button class="btn btn-pink mt-4 d-lg-none">
-                  Pilih Destinasi &nbsp
-                  <i class="fa-solid fa-right-long"></i>
-               </button>
-
-               <img src="assets/images/pantai-2.png" alt="" class="hero-image-small d-lg-none">
+               <div class="hero-route">
+                  <img src="assets/images/route.png" class="hero-image-route d-none d-lg-inline-block" alt="">
+               </div>
+               
+               <div class="hero-right col-lg-4 offset-lg-1">
+                  <img src="assets/images/pantai.jpg" alt="" class="img-rounded hero-image d-none d-lg-block">
+               </div>
 
             </div>
-
-            <div class="hero-route">
-               <img src="assets/images/route.png" class="hero-image-route d-none d-lg-inline-block" alt="">
-            </div>
-
-            <div class="hero-right col-lg-4 offset-lg-1">
-               <img src="assets/images/pantai.jpg" alt="" class="img-rounded hero-image d-none d-lg-block">
-            </div>
-
          </div>
-      </div>
-   </section>
+      </section>
+
+
+      <!-- WISATA -->
+      <section id="wisata" class="wisata">
+         <div class="container">
+            <div class="row">
+               <div class="col text-center">
+                  <h1>Destinasi Wisata</h1>
+               </div>
+            </div>
+            <div class="row g-5">
+               <div class="col-md-6 col-lg-4 destinasi-content-container">
+                  <a href="">
+                     <div class="destinasi-content">
+                        <img src="assets/images/kali-bladon.jpg" alt="Kali Bladon">
+                        <div class="destinasi-content-text">
+                           <h2>Kali Bladon</h2>
+                           <p>Brangsong</p>
+                        </div>
+                        <div class="destinasi-content-border"></div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col-md-6 col-lg-4 destinasi-content-container">
+                  <a href="">
+                     <div class="destinasi-content">
+                        <img src="assets/images/curug-sewu.jpg" alt="Danau Banaran">
+                        <div class="destinasi-content-text">
+                           <h2>Curug Sewu</h2>
+                           <p>Patean</p>
+                        </div>
+                        <div class="destinasi-content-border"></div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col-md-6 col-lg-4 destinasi-content-container">
+                  <a href="">
+                     <div class="destinasi-content">
+                        <img src="assets/images/danau-banaran.jpg" alt="Danau Banaran">
+                        <div class="destinasi-content-text">
+                           <h2>Danau Banaran</h2>
+                           <p>Sukorejo</p>
+                        </div>
+                        <div class="destinasi-content-border"></div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col-md-6 col-lg-4 destinasi-content-container">
+                  <a href="">
+                     <div class="destinasi-content">
+                        <img src="assets/images/pantai-ngebum.jpg" alt="Pantai Ngebum">
+                        <div class="destinasi-content-text">
+                           <h2>Pantai Ngebum</h2>
+                           <p>Kaliwungu</p>
+                        </div>
+                        <div class="destinasi-content-border"></div>
+                     </div>
+                  </a>
+               </div>
+               
+            </div>
+         </div>
+      </section>
+   
+   </div>
+
 
    <!-- Optional JavaScript; choose one of the two! -->
 

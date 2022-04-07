@@ -1,3 +1,14 @@
+::-moz-selection {
+   /* Code for Firefox */
+   color: white;
+   background: #e76e77;
+}
+
+::selection {
+   color: white;
+   background: #e76e77;
+}
+
 body {
    font-family: 'Poppins', sans-serif;
 }
@@ -57,10 +68,10 @@ body {
 }
 
 .navbar-nav-left li {
-   margin-right: 120px;
+   margin-right: 120px !important;
 }
 
-.hero {
+.container-main {
    position: absolute;
    width: 100%;
    top: 0;
@@ -143,17 +154,21 @@ body {
    font-size: 30px;
 }
 
+.container-main {
+   overflow-x: hidden;
+}
+
 .hero-right {
    margin-top: 158px;
    padding: 0;
-   overflow: hidden;
    filter: drop-shadow(0px 16px 40px rgba(0, 0, 0, 0.15));
 }
 
 .hero-image {
+   position: absolute;
    border-radius: 1600px 0 0 1600px;
    object-fit: cover;
-   width: 160%;
+   width: 660px;
 }
 
 .hero-route {
@@ -166,23 +181,123 @@ body {
 
 
 
+/* WISATA */
+.wisata {
+   background: #F9F9F9;
+}
+
+.wisata h1 {
+   margin-top: 120px;
+   margin-bottom: 86px;
+   font-family: 'Playfair Display', sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+}
+.wisata h1::after{
+   content: "";
+   width: 60px;
+   border-bottom: 5px solid #E76E77;
+   display: block;
+   margin: 10px auto;
+   text-align: center;
+}
+
+.destinasi-content {
+   position: relative;
+   height: 500px;
+   filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+.destinasi-content-border{
+   content: "";
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   border: 8px solid transparent;
+   border-radius: 30px;
+   background: linear-gradient(45deg, #F691A3, #EB757E, #EB757E, #F691A3) border-box;
+   -webkit-mask: /*4*/
+      linear-gradient(#fff 0 0) padding-box, 
+      linear-gradient(#fff 0 0);
+   -webkit-mask-composite: xor; /*5'*/
+      mask-composite: exclude; /*5*/
+   z-index: 1000;
+}
+
+.destinasi-content img {
+   width: 100%;
+   height: 100%;
+   border-radius: 30px;
+   object-fit: cover;
+}
+
+.destinasi-content-text {
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(90.19deg, #386387 0.14%, #2A4E6D 99.82%);
+   border-radius: 0 30px 0 30px;
+   padding: 20px 30px 0;
+}
+
+.destinasi-content-text h2 {
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 2px;
+}
+
+.destinasi-content-text p {
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+
+
+
 /* BREAKPOINTS */
 
+
+/* [Custom] | 1600px < | */
+@media only screen and (min-width: 1600px) {
+   .hero-route {
+      padding: 180px 30vw 0 0;
+   }
+}
+
 /* [XXL] Extra Extra large devices | 1400px < | */
-@media only screen and (min-width: 1400px) {}
+@media only screen and (min-width: 1400px) {
+   .hero-image {
+      border-radius: 1600px;
+      object-fit: cover;
+      width: 660px;
+      height: 660px;
+   }
+}
 
 /* [XL] Extra large devices (large laptops and desktops) | < 1400px | */
 @media only screen and (max-width: 1400px) {}
 
 /* [LG] Large devices (laptops/desktops) | < 1200px | */
 @media only screen and (max-width: 1200px) {
+   .navbar-nav-left li {
+      margin-right: 80px !important;
+   }
    .hero-route {
       padding: 180px 22vw 0 0;
+   }
+   .hero-image {
+      border-radius: 1600px 0 0 1600px;
+      object-fit: cover;
+      width: 160%;
    }
 }
 
 /* [MD] Medium devices (landscape tablets) | < 992px | */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
    .navbar {
       height: 100px;
       padding-top: 0;
@@ -196,7 +311,7 @@ body {
    }
 
    .navbar-nav-left li {
-      margin-right: 0;
+      margin-right: 40px !important;
    }
 
    .navbar-toggler {
@@ -222,7 +337,11 @@ body {
 }
 
 /* [SM] Small devices (portrait tablets and large phones) | < 768px | */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+   .navbar-nav-left li {
+      margin-right: 0 !important;
+   }
+}
 
 /* [XS] Extra small devices (phones) | < 576px | */
 @media only screen and (max-width: 576px) {}
