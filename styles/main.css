@@ -193,7 +193,8 @@ body {
 
 /* Begin: DESTINASI WISATA */
 .wisata {
-   background: #F9F9F9;
+   background: #F9F9F9 url("../assets/images/bg-map.png") no-repeat center center;
+   background-size: contain;
    padding-bottom: 280px;
 }
 
