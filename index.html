@@ -316,9 +316,17 @@
 	   VanillaTilt.init(document.querySelectorAll(".destinasi-content-container"), {
          max: 15,
          speed: 1000,
+         axis: "x",
          scale: .9,
          glare: true,
          "max-glare": .4,
+         reset: true,
+         gyroscope: false
+      });
+	   VanillaTilt.init(document.querySelectorAll(".kendal-map"), {
+         max: 25,
+         speed: 1000,
+         "full-page-listening": true,
          reset: true,
          gyroscope: false
       });
