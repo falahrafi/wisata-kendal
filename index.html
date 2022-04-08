@@ -118,6 +118,7 @@
                      <i class="fa-solid fa-right-long"></i>
                   </a>
 
+                  <!-- Pantai Image on < LG -->
                   <img src="assets/images/pantai-2.png" alt="" class="hero-image-small d-lg-none">
 
                </div>
@@ -126,8 +127,9 @@
                   <img src="assets/images/route.png" class="hero-image-route d-none d-lg-inline-block" alt="">
                </div>
                
-               <div class="hero-right col-lg-4 offset-lg-1">
-                  <img src="assets/images/pantai.jpg" alt="" class="img-rounded hero-image d-none d-lg-block">
+               <!-- Pantai Image on LG >= -->
+               <div class="hero-right col-lg-4 offset-lg-1 d-none d-lg-block">
+                  <img src="assets/images/pantai.jpg" alt="" class="img-rounded hero-image">
                </div>
 
             </div>
@@ -274,26 +276,26 @@
             <div class="container footer-border-top"></div>
          </div>
          <div class="container footer-main">
-            <div class="row">
-               <div class="col-lg-4">
-                  <div class="kendal-logo col-lg-3 mb-3" href="#">
+            <div class="row mx-2 mx-md-0">
+               <div class="col-md-4">
+                  <div class="kendal-logo col-md-3 mb-3" href="#">
                      k<span>e</span>ndal<span>.</span>
                   </div>
                   <p class="footer-main-text">
                      Jelajahi berbagai wisata menarik dengan biaya terjangkau.
                   </p>
                </div>
-               <div class="col-lg-2 align-self-center text-end ms-auto">
+               <div class="col-md-2 align-self-center text-md-end ms-auto mt-4 mt-md-0">
                   <a href="" class="footer-link">
                      About
                   </a>
                </div>
-               <div class="col-lg-2 align-self-center text-end">
+               <div class="col-md-2 align-self-center text-md-end mt-3 mt-md-0">
                   <a href="" class="footer-link">
                      Wisata
                   </a>
                </div>
-               <div class="col-lg-2 align-self-center text-end">
+               <div class="col-md-2 align-self-center text-md-end mt-3 mt-md-0">
                   <a href="" class="footer-link">
                      Contact
                   </a>
@@ -312,9 +314,11 @@
    <script src="libraries/vanilla-tilt.js"></script>
    <script type="text/javascript">
 	   VanillaTilt.init(document.querySelectorAll(".destinasi-content-container"), {
-         max: 25,
+         max: 15,
          speed: 1000,
          scale: .9,
+         glare: true,
+         "max-glare": .4,
          reset: true,
          gyroscope: false
       });
