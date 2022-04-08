@@ -223,7 +223,6 @@ body {
 }
 
 .destinasi-content-border{
-   content: "";
    position: absolute;
    top: 0;
    width: 100%;
@@ -307,7 +306,7 @@ body {
 
 .footer-copyright {
    background: #24435E;
-   color: #EB757E;
+   color: #E76E77;
    font-family: 'Poppins', sans-serif;
    font-size: 18px;
    font-weight: 500;
