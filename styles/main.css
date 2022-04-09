@@ -93,7 +93,7 @@ body {
 .dropdown-item {
    border-radius: 30px;
    font-weight: 500 !important;
-} .dropdown-item:hover {
+} .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
    background: linear-gradient(to right, #F691A3, #EB757E);
    color: white !important;
 }
@@ -204,7 +204,7 @@ body {
    position: absolute;
    border-radius: 1600px 0 0 1600px;
    object-fit: cover;
-   width: 660px;
+   width: 540px;
 }
 
 .hero-route {
