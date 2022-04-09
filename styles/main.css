@@ -98,18 +98,18 @@ body {
    height: 800px;
 }
 
-.carousel {
+#hero .carousel {
    position: absolute;
    margin-left: -30%;
    z-index: -10;
 }
 
-.carousel-item img {
+#hero .carousel-item img {
    height: 800px;
    filter: grayscale(80%);
 }
 
-.carousel-control-container {
+#hero .carousel-control-container {
    position: absolute;
    top: auto; left: 0; bottom: 0; right: 0;
    margin: 0 auto 0;
@@ -117,13 +117,13 @@ body {
    z-index: 10;
 }
 
-.carousel-control-container i {
+#hero .carousel-control-container i {
    color: rgba(255, 255, 255, 0.6);
    font-size: 40px;
    transition: all .3s ease-in-out;
 }
-.carousel-control-container .btn-prev:hover i,
-.carousel-control-container .btn-next:hover i {
+#hero .carousel-control-container .btn-prev:hover i,
+#hero .carousel-control-container .btn-next:hover i {
    color: rgba(255, 255, 255, 0.96);
 }
 

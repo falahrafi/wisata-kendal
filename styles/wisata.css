@@ -16,6 +16,8 @@
 .wisata-top-image-container {
    position: relative;
    filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.15));
+   border-radius: 30px;
+   overflow: hidden;
 }
 
 .wisata-top-image {
@@ -24,6 +26,8 @@
    border-radius: 30px;
    object-fit: cover;
 }
+
+.carousel-item {}
 
 .wisata-top-image-border{
    position: absolute;
@@ -45,7 +49,7 @@
    top: -50%;
    height: fit-content;
    padding: 24px 46px;
-   background-color:rgba(255, 255, 255, .95);
+   background-color:rgba(255, 255, 255, .96);
    border-radius: 30px;
    filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.15));
    z-index: 1000;
@@ -55,7 +59,7 @@
    position: absolute;
    left: 50%; right: 50%;
    width: 1px;
-   height: 60px;
+   height: 50%;
    background-color: #386387;
    padding: 0;
    margin: 0;
@@ -105,6 +109,7 @@
    font-family: 'Playfair Display', sans-serif;
    font-size: 40px;
    font-weight: 700;
+   margin-top: 20px;
    margin-bottom: 36px;
    text-align: center;
 }
@@ -123,4 +128,101 @@
    font-weight: 400;
    line-height: 36px;
    margin-bottom: 24px;
+}
+
+
+/* [XXL] Extra Extra large devices | 1400px < | */
+@media only screen and (min-width: 1400px) {
+
+}
+
+/* [XL] Extra large devices (large laptops and desktops) | < 1400px | */
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* [LG] Large devices (laptops/desktops) | < 1200px | */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* [MD] Medium devices (landscape tablets) | < 992px | */
+@media only screen and (max-width: 993px) {
+   .navbar .kendal-logo {
+      color: white !important;
+   }
+   }
+
+/* [SM] Small devices (portrait tablets and large phones) | < 768px | */
+@media only screen and (max-width: 768px) {
+   .wisata-top-info-container {
+      top: -50%;
+      padding: 32px 36px;
+   }
+   .wisata-info-location {
+      margin-right: 0;
+      margin-bottom: 30px;
+   }
+   .wisata-info-ticket {
+      margin-left: 0;
+   }
+   .wisata-bottom h1 {
+      margin-top: -10px;
+   }
+}
+
+/* [XS] Extra small devices (phones) | < 575px | */
+@media only screen and (max-width: 575px) {
+   .wisata-details {
+      margin-top: 40px;
+   }
+
+   .wisata-top-image-container {
+      position: relative;
+      filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0));
+      border-radius: 0;
+   }
+
+   .wisata-top-image {
+      width: 100%;
+      height: 460px;
+      border-radius: 0;
+      object-fit: cover;
+   }
+
+   .wisata-top-info-container {
+      top: 30%;
+      background-color:rgba(255, 255, 255, 0);
+      filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0));
+      z-index: 1000;
+   }
+   
+   .wisata-bottom {
+      position: relative;
+      margin-top: -260px;
+      padding-top: 56px;
+      background-color: white;
+      border-radius: 30px 30px 0 0;
+      filter: drop-shadow(0px -8px 4px rgba(0, 0, 0, .15));
+      z-index: 100;
+   }
+
+   .wisata-bottom h1 {
+      margin-bottom: 220px;
+   }
+}
+
+
+/* [Custom] < 363px | */
+@media only screen and (max-width: 363px) {
+   .wisata-bottom {
+      margin-top: -280px;
+   }
+}
+
+/* [Custom] < 273px | */
+@media only screen and (max-width: 273px) {
+   .wisata-bottom {
+      margin-top: -330px;
+   }
 }

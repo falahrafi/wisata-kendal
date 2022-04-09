@@ -22,7 +22,7 @@
 
    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
       <div class="container-fluid">
-         <a class="navbar-brand kendal-logo col-lg-3" href="#">
+         <a class="navbar-brand kendal-logo col-lg-3" href="index.html">
             k<span>e</span>ndal<span>.</span>
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,21 +54,42 @@
       <!-- Begin: WISATA -->
       <section id="wisataDetails" class="wisata-details">
 
+
          <!-- Begin: WISATA TOP -->
          <div class="container wisata-top">
             <div class="row">
-               <div class="col-lg-8 offset-lg-2">
+               <div class="col-lg-8 offset-lg-2 p-0">
                   <div class="wisata-top-image-container">
-                     <img src="assets/images/curug-sewu.jpg" alt="Curug Sewu" class="wisata-top-image">
-                     <div class="wisata-top-image-border"></div>
+
+                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <img src="assets/images/curug-sewu.jpg" alt="Curug Sewu" class="wisata-top-image">
+                           </div>
+                           <div class="carousel-item">
+                              <img src="assets/images/curug-sewu-2.jpg" alt="Curug Sewu" class="wisata-top-image">
+                           </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                     
+                     <div class="wisata-top-image-border d-none d-sm-block"></div>
                   </div>
                </div>
-               <div class="col-lg-6 offset-lg-3">
+               
+               <div class="col-sm-8 col-md-10 col-lg-6 offset-sm-2 offset-md-1 offset-lg-3">
                   <div class="row wisata-top-info-container">
                      
-                     <div class="border-wisata-info"></div>
+                     <div class="border-wisata-info d-none d-md-inline"></div>
 
-                     <div class="col-lg-6 wisata-info">
+                     <div class="col-md-6 wisata-info">
                         <div class="wisata-info-location">
                            <i class="fa-solid fa-location-dot"></i>
                            <div class="wisata-info-main">
@@ -78,7 +99,7 @@
                         </div>
                      </div>
 
-                     <div class="col-lg-6 wisata-info">
+                     <div class="col-md-6 wisata-info">
                         <div class="wisata-info-ticket">
                            <i class="fa-solid fa-ticket"></i>
                            <div class="wisata-info-main">
@@ -94,10 +115,11 @@
          </div>
          <!-- End: WISATA TOP -->
 
+
          <!-- Begin: WISATA BOTTOM -->
          <div class="container wisata-bottom">
             <div class="row">
-               <div class="col-lg-6 offset-lg-3">
+               <div class="col-lg-6 offset-lg-3 px-4">
                   <h1>Curug Sewu</h1>
                   <p>Curug Sewu terletak di Patean, Kendal dan merupakan air terjun tingkat tiga dengan ketinggian sekitar 80m.</p>
                   <p>Nama air terjun tersebut diambilkan dari nama desa tempat air terjun tersebut berada, yakni desa Curugsewu tepatnya di Kecamatan Patean, jaraknya 40 kilometer dari kota Kendal dengan terlebih dahulu melewati kota Weleri dan Sukorejo. dari Temanggung dan Wonosobo dapat melewati Parakan - Ngadirejo - Patean - Curug Sewu.</p>
