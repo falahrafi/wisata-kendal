@@ -130,6 +130,26 @@
    margin-bottom: 24px;
 }
 
+.wisata-source {
+   background-color: #F9F9F9;
+   border: 1px solid #386387;
+   border-radius: 16px;
+   padding: 24px 30px;
+}
+
+.wisata-source cite {
+   color: #386387;
+   font-weight: 500;
+}
+
+.wisata-source cite a {
+   color: #EB757E;
+   font-weight: 400;
+   text-decoration: none;
+} .wisata-source cite a:hover {
+   color: #386387;
+}
+
 
 /* [XXL] Extra Extra large devices | 1400px < | */
 @media only screen and (min-width: 1400px) {
