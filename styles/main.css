@@ -430,8 +430,14 @@ body {
 
 /* [SM] Small devices (portrait tablets and large phones) | < 768px | */
 @media only screen and (max-width: 768px) {
+   .navbar {
+      height: 80px;
+   }
    .navbar-nav-left li {
       margin-right: 0 !important;
+   }
+   .hero-center {
+      margin-top: 150px;
    }
 }
 
