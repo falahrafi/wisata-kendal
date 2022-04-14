@@ -1,0 +1,62 @@
+.pagination {
+   margin: 50px 0 90px;
+}
+
+/*------------------------------------*\
+	Wisatakendal Theme Styles
+\*------------------------------------*/
+.wisatakendal-theme span {
+	cursor:pointer;
+}
+
+.wisatakendal-theme a, .wisatakendal-theme span {
+   float: left;
+	border: none;
+	border-left: none;
+	color: #EB757E;
+   font-family: 'Poppins';
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 27px;
+	min-width: 52px;
+	text-align: center;
+   padding: 12px 20px;
+	background: none;
+}
+
+.wisatakendal-theme li {
+   margin: 0 4px;
+}
+
+.wisatakendal-theme a:hover, .wisatakendal-theme li:not(.disabled):not(.active) span:hover {
+	background: linear-gradient(to right, #F691A3, #EB757E);
+   border-radius: 50px;
+   color: white !important;
+}
+
+.wisatakendal-theme li:first-child a, .wisatakendal-theme li:first-child span {
+
+}
+
+.wisatakendal-theme li:last-child a, .wisatakendal-theme li:last-child span {
+
+}
+
+.wisatakendal-theme .current {
+   background: linear-gradient(to right, #F691A3, #EB757E);
+   box-shadow: 0px 16px 40px rgba(235, 117, 126, 0.3);
+   border-radius: 50px;
+   color: white !important;
+}
+
+.wisatakendal-theme .prev,
+.wisatakendal-theme .next {
+   color: #EB757E !important;
+   background: none;
+   box-shadow: none;
+}
+
+.wisatakendal-theme li[class=disabled] .prev,
+.wisatakendal-theme li[class=disabled] .next {
+   color: rgb(194, 194, 194) !important;
+}
