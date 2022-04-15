@@ -42,12 +42,25 @@ body {
 }
 
 .modal-body {
-   background: linear-gradient(178.69deg, rgba(56, 99, 135, 0.94) 1.12%, rgba(42, 78, 109, 0.8) 98.88%);
+   background: linear-gradient(178.69deg, rgba(56, 99, 135, 1) 1.12%, rgba(42, 78, 109, 1) 98.88%);
 }
 
 .modal-body-content {
    position: relative;
    top: 50%;
+}
+
+.modal-body-content .kendal-logo {
+   font-size: 52px;
+}
+
+.modal-body-content .spinner-white {
+   color: #fff !important;
+   margin-left: -10px;
+}
+.modal-body-content .spinner-pink {
+   color: #EB757E !important;
+   margin-left: -22px;
 }
 
 .kendal-logo {
