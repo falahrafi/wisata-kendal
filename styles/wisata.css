@@ -251,6 +251,9 @@
    .wisata-bottom {
       margin-top: -280px;
    }
+   .wisata-bottom h1 {
+      font-size: 36px;
+   }
 }
 
 /* [Custom] < 273px | */
