@@ -61,6 +61,22 @@
       </div>
    </nav>
 
+   <!-- Modal -->
+   <div class="modal d-block" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+         <div class="modal-content">
+            <div class="modal-body text-center">
+               <div class="modal-body-content">
+                  <div class="kendal-logo mb-2">
+                     k<span>e</span>ndal<span>.</span>
+                  </div>
+                  <div class="spinner-border text-light"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <div class="container-main">
 
       <!-- Begin: HERO -->
@@ -324,6 +340,12 @@
    </div>
 
 
+   <script src="libraries/jquery-3.6.0.js"></script>
+   <script>
+      setTimeout(function() {
+         document.getElementById('exampleModal').classList.add("d-none");
+      }, 1200);
+   </script>
    <script src="libraries/vanilla-tilt.js"></script>
    <script type="text/javascript">
 	   VanillaTilt.init(document.querySelectorAll(".destinasi-content-container"), {

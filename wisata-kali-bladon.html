@@ -10,6 +10,7 @@
    <link href="libraries/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
    <link href="styles/main.css" rel="stylesheet">
    <link href="styles/wisata.css" rel="stylesheet">
+   <link href="styles/pagination.css" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
@@ -95,30 +96,59 @@
             <div class="row">
                <div class="col-lg-6 offset-lg-3 px-4">
                   <h1>Kali Bladon</h1>
-                  <p>Tempat wisata ini mengusung nuansa pedesaan yang sangat kental. Spotnya juga menarik dan Instagramable. Dulunya, Kali Bladon hanyalah sungai yang digunakan oleh penduduk sekitar untuk irigasi. Tapi karena air ini cukup jernih, maka penduduk menjadikan kali tersebut sebagai tempat wisata. Udaranya sejuk, dan banyak pengunjung memanfaatkannya untuk bersantai.</p>
-                  <p>Hal menarik yang bisa Anda lakukan di sini adalah bersantai di atas kasur apung. Kasur ini memang tidak seperti pada umumnya, yaitu sebuah pelampung yang akan mengapung di atas aliran air. Pelampung ini dinamakan laybag. Anda bisa menyewanya dengan harga kisaran Rp 5.000 per orangnya. Bukan hanya kasur apung, destinasi Kali Bladon juga menyediakan rakit sederhana. Biaya sewa untuk satu rakit ini hanya sekitar Rp 10.000,-.</p>
-                  <p>Anda pun dapat berfoto selfie atau wefie di spot satu ini. Tidak hanya itu, Anda juga dapat berkeliling di sekitar sungai dan juga bisa bersantai di atas hammock. Meski baru, wisata Kali Bladon sudah menyediakan banyak spot foto dengan latar sungai serta sawah pedesaan. Salah satunya adalah dudukan yang dapat digunakan pengunjung untuk menikmati aliran sungai yang tenang. Untuk masuk ke tempat wisata ini, Anda akan ditarik retribusi sebesar Rp 2.000,- (tanpa tiket) per orang, dan untuk parkir motor Rp 2.000,-.</p>
-                  
-                  <div class="wisata-source mt-5">
+
+                  <!-- Begin: PARAGRAPH -->
+                  <div class="selection" id="page-1">
+                     <p>Jika membahas mengenai tempat wisata paling menarik dan populer, Kendal memiliki deretan objek tempat wisata tersebut,  salah satunya adalah objek wisata yang bernama Kali Bladon kendal, objek wisata ini sedang sangat menjulang namanya terutama di media sosial instagram. Banyak pengunjung yang telah mengambil foto di area objek wisata ini. Kali Bladon terletak di Dusun Krayapan, Desa Purwokerto, Kecamatan Brangsong, Kabupaten Kendal, Jawa Tengah.</p>
+                     <p>Ketika sore hari mulai banyak pengunjung yang berdatangan untuk menikmati udara sejuk dan jauh dari polusi. Airnya yang bersih juga menambah daya tarik pengunjung untuk datang ke objek wisata Kali Bladon. Rata- rata pengunjung yang datang ke objek wisata Kali Bladon adalah remaja. Pengunjung tak hanya berasal dari daerah Kendal namun, banyak juga yang berasal dari luar daerah Kendal seperti Semarang dll.</p>
+                     <h4><i class="fa-solid fa-landmark"></i>&ensp;Sejarah</h4>
+                     <hr>
+                     <p>Tempat ini masih terbilang baru sebagai objek wisata. mulanya Kali Bladon hanya berupa sungai yang berada di area persawahan yang berfungsi sebagai pengairan untuk membantu petani yang meiliki sawah di sekitar kali tersebut. Karena dirasa memiliki keindahan pemandangan alam yang menarik hingga akhirnya kali Bladon diresmikan oleh pemerintah sebagai salah satu destinasi objek wisata di Kendal.</p>
+                  </div>
+
+                  <div class="selection" id="page-2">
+                     <h4><i class="fa-solid fa-ticket"></i></i>&ensp;Tiket Masuk & Fasilitas</h4>
+                     <hr>
+                     <p>Pengunjung perlu mengeluarkan biaya sebesar Rp 2.000,- per orang dan parkir kendaraan roda dua Rp 2.000,-. Menurut informasi yang ada Kali Bladon Pemerintah Kabupaten Kendal dan masih dalam proses pembangunan tempat wisata.</p>
+                     <p>Fasiilitas yang terdapat di Kali Bladon diantaranya terdapat tempat duduk di pinggir sungai, penyewaan rakit dengan biaya sewa sebesar Rp 10.000,-, penyewaan pelampung (laybag) dengan harga Rp 5.000,-. Terdapat 2 buah rakit dan 3 pelampung (laybag) yang disewakan dan biasanya digunakan menjadi properti foto pengunjung.</p>
+                  </div>
+
+                  <div class="selection" id="page-3">
+                     <h4><i class="fa-solid fa-route"></i>&ensp;Rute</h4>
+                     <hr>
+                     <p>Akses jalan menuju Kali Bladon Kendal masih dalam kondisi rusak, berlubang dan terdapat genangan air setelah hujan. Untuk menuju lokasi Kali Bladon pengunjung dapat melewati rute jalan dari arah Semarang setelah sampai di pertigaan SPBU Kebonadem, Brangsong lurus ke barat. Menjumpai SMP N 1 Brangsong atau SMK N 4 Kendal, di kanan jalan ada gapura Desa Purwokerto.</p>
+                     <p>Lalu Masuk gang tersebut jalanlah mengikuti sungai, melewati pematang sawah, hingga ada petunjuk arah ke Kali Bladon. Memang tak mudah untuk sampai menuju objek wisata Kali Bladon, namun hal itu tak mengurungkan niat pengunjung yang penasaran akan objek wisata yang populer tersebut.</p>
+                  </div>
+                  <!-- End: PARAGRAPH -->
+
+                  <!-- PAGINATION -->
+                  <ul id="selector" class="pagination justify-content-center"></ul>
+
+                  <!-- Begin: SOURCE -->
+                  <div class="alert wisata-source alert-dismissible fade show mt-5">
+                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+
+                     <i class="fa-solid fa-book-bookmark mb-2"></i>&ensp;Source :
                      <cite class="d-block mb-2">
-                        Source :
-                        <a target="_blank" href="https://ksmtour.com/informasi/tempat-wisata/jawa-tengah/kali-bladon-wisata-instagramable-jawa-tengah.html">
-                           ksmtour.com
+                        <a target="_blank" href="https://www.masyog.com/2019/04/rute-menuju-ke-kali-bladon-kendal.html">
+                           masyog.com
                         </a>
                      </cite>
+                     <hr>
+                     <i class="fa-solid fa-images mb-2"></i>&ensp;Images :
                      <cite class="d-block">
-                        Images :
                         <a target="_blank" href="https://www.instagram.com/p/BUODaqtFyG7/">
-                           pergicom
+                           @pergicom
                         </a>,
                         <a target="_blank" href="http://kisahklasikduniaku.blogspot.com/2017/02/kali-bladon-kendal.html">
                            Kisah Klasik Duniaku
                         </a>,
                         <a target="_blank" href="https://www.instagram.com/p/BSVx9gUg5FI/">
-                           jogjajateng
+                           @jogjajateng
                         </a>
                      </cite>
                   </div>
+                  <!-- End: SOURCE -->
 
                </div>
             </div>
@@ -139,6 +169,8 @@
 
 
    <script src="libraries/jquery-3.6.0.js"></script>
+   <script src="libraries/flaviusmatis-simplePagination.js-da97104/jquery.simplePagination.js"></script>
+   <script src="scripts/wisata-details-pagination.js"></script>
    <script src="scripts/ajax-includes.js"></script>
    <script src="libraries/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
 

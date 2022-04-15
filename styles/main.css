@@ -41,6 +41,15 @@ body {
    padding: 0 5rem 0 !important;
 }
 
+.modal-body {
+   background: linear-gradient(178.69deg, rgba(56, 99, 135, 0.94) 1.12%, rgba(42, 78, 109, 0.8) 98.88%);
+}
+
+.modal-body-content {
+   position: relative;
+   top: 50%;
+}
+
 .kendal-logo {
    font-family: 'Playfair Display', serif !important;
    font-size: 40px;

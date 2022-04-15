@@ -10,6 +10,7 @@
    <link href="libraries/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
    <link href="styles/main.css" rel="stylesheet">
    <link href="styles/wisata.css" rel="stylesheet">
+   <link href="styles/pagination.css" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
@@ -95,28 +96,65 @@
             <div class="row">
                <div class="col-lg-6 offset-lg-3 px-4">
                   <h1>Danau Banaran</h1>
-                  <p>Danau sebening kaca ini banyak menarik perhatian netizen untuk berswafoto ditengah danau. Bukan dengan naik kapal namun benar-benar berjalan ke tengah danau “la kok bisa”.</p>
-                  <p>Ternyata kalau ditelisik lebih dekat pengunjung yang berswafoto di tengah danau ini bukanya terapung melainkan berjalan diatas pondasi yang menjorok ke tengah danau.</p>
-                  <p>Tak hanya bening, namun danau yang sebenarnya berupa bendungan ini milik PTP Banaran ini terlihat warna hijau kebiruan. Hal diakibatkan pantulan dari rimbunya pepohonan yang ada disana dan langit yang memantul di air danau. Tak khayal bendungan yang memiliki fungsi sebagai sumber irigasi ini  menampakan view yang kece banget.</p>
-                  <p>Rimbunnya tanaman disekitar danau juga menambah kesan alami di tempat ini dan tentunya makin bagus untuk berswafoto. Bahkan sebelum tiba di lokasi, kamu bakal disuguhkan dengan kebun cengkeh yang asri dan segar.</p>
-                                 
-                  <div class="wisata-source mt-5">
+
+                  <!-- Begin: PARAGRAPH -->
+                  <div class="selection" id="page-1">
+                     <p>Danau Banaran Sukorejo sudah viral dimana-mana khususnya di Kendal. Danau sebening kaca ini banyak menarik perhatian netizen untuk berswafoto ditengah danau. Bukan dengan naik kapal namun benar-benar berjalan ke tengah danau.</p>
+                     <p>Ternyata kalau ditelisik lebih dekat pengunjung yang berswafoto di tengah danau ini bukanya terapung melainkan berjalan diatas pondasi yang menjorok ke tengah danau. Namanya juga anak zaman now, pinter banget ambil gambar, jadi seolah-olah berjalan diatas air bak pesulap.</p>
+                     <p>Tak hanya bening, namun danau yang sebenarnya berupa bendungan ini milik PTP Banaran ini terlihat warna hijau kebiruan. Hal diakibatkan pantulan dari rimbunya pepohonan yang ada disana dan langit yang memantul di air danau. Tak khayal bendungan yang memiliki fungsi sebagai sumber irigasi ini  menampakan view yang kece banget.</p>
+                     <p>Rimbunnya tanaman disekitar danau juga menambah kesan alami di tempat ini dan tentunya makin bagus untuk berswafoto. Bahkan sebelum tiba di lokasi, kamu bakal disuguhkan dengan kebun cengkeh yang asri dan segar.</p>
+                     <h4><i class="fa-solid fa-landmark"></i>&ensp;Sejarah</h4>
+                     <hr>
+                     <p>Sebenarnya danau ini merupakan bendungan milik PTP Banaran dan aur bendungan digunakan untuk keperluan perkebunan setempat, seperti menyiram tanaman. Namun karena keindahan dan ke eksotisan yang dimiliki, Danau Banaran Kendal malah menjadi tempat wisata yang sayang untuk anda lewatkan.</p>
+                  </div>
+
+                  <div class="selection" id="page-2">
+                     <h4><i class="fa-solid fa-ticket"></i></i>&ensp;Tiket Masuk & Fasilitas</h4>
+                     <hr>
+                     <p>Kabar baiknya ternyata tidak ada tiket masuk yang dikenakan untuk masuk ke area Danau Banaran Sukorejo ini. Bisa dibilang ya tiket masuk kesana gratis. Meski indah, namun obyek ini belum bisa disebut tempat wisata, namun baru berupa keindahan alam, jadi wajar apabila masih gratis.</p>
+                     <p>Wisata danau menakjubkan satu ini sebenarnya belum memiliki fasilitas yang memadai, masih serba apa adanya. Namun itu semua tidak akan mengurangi serunya berlibur dan rekreasi di Danau Banaran bersama keluarga maupun orang tercinta.</p>
+                     <p>Nikmati berbagai sajian mengagumkan dari Danau Banaran yang membuat momen liburan kali ini lebih berkesan dan tak akan terlupakan. Dengan berswafoto, duduk santai ataupun jalan-jalan bisa menjadi pilihan alternativ saat berlibur disini.</p>
+                  </div>
+
+                  <div class="selection" id="page-3">
+                     <h4><i class="fa-solid fa-route"></i>&ensp;Rute</h4>
+                     <hr>
+                     <p>Alamat Danau Banaran berada di Dusun Surugajah, Kelurahan Ngargosari, Kecamatan Sukorejo, Kabupaten Kendal, Provinsi Jawa Tengah. Dari pusat kota/alun-alun Kendal jaraknya cukup jauh, kurang lebih sekitar 46 km dengan menempuh perjalanan selama 90 menit berkendara.</p>
+                     <p>Akses jalan yang harus di lalui terbilang cukup baik dan tidak akan menyulitkan wisatawan yang hendak berkunjung. Akan tetapi ada baiknya untuk anda menyiapkan kendaraan yang digunakan dalam keadaan sehat dan siap tempur di segala medan.</p>
+                     <p>Dari arah Weleri ambil ke selatan hingga tiba di terminal Sukorejo. Tetap lurus hingga bertemu dengan perempatan,. Dari perempatan tersebut belok kanan dan tetap lurus hingga melewati perkampungan warga, maka tibalah kamu di danau tersebut.</p>
+                     <p>Akses jalan dari terminal Sukorejo ke lokasi sudah beton dan bagus. Namun jalan mendekati lokasi masih berupa tanah liat dan rusak. Sebenarnya cukup mudah dijangkau dengan roda dua, namun jika dengan mobil, maka perlu jalan sekitar 500 meter dari lahan parkir.</p>
+                  </div>
+                  <!-- End: PARAGRAPH -->
+
+                  <!-- PAGINATION -->
+                  <ul id="selector" class="pagination justify-content-center"></ul>
+
+                  <!-- Begin: SOURCE -->
+                  <div class="alert wisata-source alert-dismissible fade show mt-5">
+                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+
+                     <i class="fa-solid fa-book-bookmark mb-2"></i>&ensp;Source :
                      <cite class="d-block mb-2">
-                        Source :
                         <a target="_blank" href="https://jadwaltravel.com/danau-banaran-sukorejo/">
                            jadwaltravel.com
+                        </a>,
+                        <a target="_blank" href="https://idntrip.com/danau-banaran/">
+                           idntrip.com
                         </a>
                      </cite>
+                     <hr>
+                     <i class="fa-solid fa-images mb-2"></i>&ensp;Images :
                      <cite class="d-block">
-                        Images :
                         <a target="_blank" href="https://www.yanacircle.com/2021/06/danau-banaran-sukorejo.html">
-                           yanacircle.com
+                           Yana Circle
                         </a>,
                         <a target="_blank" href="https://www.instagram.com/p/COZ365EJXNw/">
-                           achmad_noer_cholis
+                           @achmad_noer_cholis
                         </a>
                      </cite>
                   </div>
+                  <!-- End: SOURCE -->
+                  
                </div>
             </div>
          </div>
@@ -136,6 +174,8 @@
 
 
    <script src="libraries/jquery-3.6.0.js"></script>
+   <script src="libraries/flaviusmatis-simplePagination.js-da97104/jquery.simplePagination.js"></script>
+   <script src="scripts/wisata-details-pagination.js"></script>
    <script src="scripts/ajax-includes.js"></script>
    <script src="libraries/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
 

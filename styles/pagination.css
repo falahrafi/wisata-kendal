@@ -59,4 +59,5 @@
 .wisatakendal-theme li[class=disabled] .prev,
 .wisatakendal-theme li[class=disabled] .next {
    color: rgb(194, 194, 194) !important;
+   cursor: default;
 }

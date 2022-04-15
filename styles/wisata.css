@@ -139,14 +139,18 @@
    margin-bottom: 20px;
 }
 
+.wisata-bottom li {
+   margin-bottom: 12px;
+}
+
 .wisata-source {
    background-color: #F9F9F9;
    border: 1px solid #386387;
-   border-radius: 16px;
+   border-radius: 8px;
    padding: 24px 30px;
 }
 
-.wisata-source cite {
+.wisata-source {
    color: #386387;
    font-weight: 500;
 }
@@ -237,7 +241,7 @@
    }
 
    .wisata-bottom h1 {
-      margin-bottom: 220px;
+      margin-bottom: 240px;
    }
 }
 
