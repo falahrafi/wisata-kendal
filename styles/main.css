@@ -47,7 +47,7 @@ body {
 
 .modal-body-content {
    position: relative;
-   top: 50%;
+   top: 42%;
 }
 
 .modal-body-content .kendal-logo {
@@ -73,7 +73,7 @@ body {
    color: #EB757E !important;
 }
 
-.navbar-nav a {
+.navbar-nav-left a {
    color: #1C1C1C !important;
    font-size: 18px;
    font-weight: 500;
@@ -82,7 +82,7 @@ body {
    font-size: 18.5px;
 }
 
-.navbar-nav a.active::after {
+.navbar-nav-left a.active::after {
    content: "";
    width: 30%;
    border-bottom: 4px solid #E76E77;
@@ -224,7 +224,7 @@ body {
 
 .hero-image {
    position: absolute;
-   border-radius: 1600px 0 0 1600px;
+   border-radius: 540px 0 0 540px;
    object-fit: cover;
    width: 540px;
 }
@@ -381,7 +381,7 @@ body {
 /* [XXL] Extra Extra large devices | 1400px < | */
 @media only screen and (min-width: 1400px) {
    .hero-image {
-      border-radius: 1600px;
+      border-radius: 540px;
       object-fit: cover;
       width: 660px;
       height: 660px;
@@ -400,7 +400,7 @@ body {
       padding: 180px 22vw 0 0;
    }
    .hero-image {
-      border-radius: 1600px 0 0 1600px;
+      border-radius: 1000px 0 0 1000px;
       object-fit: cover;
       width: 160%;
    }

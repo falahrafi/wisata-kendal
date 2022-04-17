@@ -1,0 +1,322 @@
+.about-nav-container {
+   position: fixed;
+   bottom: 0; left: 0; right: 0;
+   margin-bottom: 16px;
+   margin-left: 36%;
+   margin-right: 36%;
+   padding: 16px 24px;
+   background: #2A4E6D;
+   border: 2px solid #E76E77;
+   border-radius: 24px;
+   box-sizing: border-box;
+   box-shadow: 0px 16px 40px rgba(235, 117, 126, 0.2);
+   justify-content: center;
+   z-index: 100;
+}
+
+.about-nav-item {
+   height: fit-content;
+   width: 90px;
+   background: rgba(56, 99, 135, 0.98);
+   border-radius: 16px;
+   color: white;
+   margin-left: 16px;
+   padding: 12px 0;
+   text-align: center;
+   transition: all .3s ease-in-out;
+}
+
+.about-nav-item:hover {
+   background: #E76E77;
+   color: white;
+   padding: 8px 0;
+}
+
+.about-nav-item:focus {
+   box-shadow: none;
+}
+
+.about-nav-item:first-child {
+   margin-left: 0;
+}
+
+.about-nav-item i {
+   font-size: 24px;
+}
+
+.about-nav-item.active {
+   background: #E76E77;
+}
+
+.about-nav-text {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 12px;
+   margin-top: 2px;
+}
+
+.accordion-button:focus, .accordion-button:not(.collapsed) {
+   background-color: #F9F9F9;
+   border: 1px solid #386387;
+   border-radius: 8px;
+   border-radius: 8px !important;
+   color: #386387;
+   outline: 0;
+   box-shadow: none;
+}
+
+.accordion {
+   margin-bottom: 48px;
+}
+
+.about-page {
+   margin-bottom: 160px;
+}
+
+.about-image {
+   width: 240px;
+   margin-top: 200px;
+}
+
+#geografis .about-image {
+   width: 700px;
+}
+
+.about-page h1 {
+   font-family: 'Playfair Display', sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   margin-top: 64px;
+   margin-bottom: 56px;
+   text-align: center;
+}
+.about-page h1::after{
+   content: "";
+   width: 60px;
+   border-bottom: 5px solid #EB757E;
+   display: block;
+   margin: 16px auto;
+   text-align: center;
+}
+
+/* .about-page h5 {
+   margin-top: 56px;
+   margin-bottom: 20px;
+} */
+
+.about-page h5 i {
+   color: #EB757E;
+}
+
+.about-page p {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 36px;
+   margin-bottom: 20px;
+}
+
+.about-page li {
+   margin-bottom: 12px;
+}
+
+
+
+
+
+/* [Custom] 1512px > | */
+@media only screen and (min-width: 1512px) {
+   .about-nav-container {
+      margin-left: 38%;
+      margin-right: 38%;
+   }
+}
+
+/* [Custom] 1814px > | */
+@media only screen and (min-width: 1814px) {
+   .about-nav-container {
+      margin-left: 40%;
+      margin-right: 40%;
+   }
+}
+
+/* [Custom] 2240px > | */
+@media only screen and (min-width: 2240px) {
+   .about-nav-container {
+      margin-left: 42%;
+      margin-right: 42%;
+   }
+}
+
+/* [Custom] 3100px > | */
+@media only screen and (min-width: 3100px) {
+   .about-nav-container {
+      margin-left: 44%;
+      margin-right: 44%;
+   }
+}
+
+
+/* [XXL] Extra Extra large devices | 1400px < | */
+@media only screen and (min-width: 1400px) {
+
+}
+
+/* [XL] Extra large devices (large laptops and desktops) | < 1400px | */
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* [Custom] < 1294px | */
+@media only screen and (max-width: 1294px) {
+   .about-nav-container {
+      margin-left: 34%;
+      margin-right: 34%;
+   }
+}
+
+/* [LG] Large devices (laptops/desktops) | < 1200px | */
+@media only screen and (max-width: 1200px) {
+   
+}
+
+/* [Custom] < 1132px | */
+@media only screen and (max-width: 1132px) {
+   .about-nav-container {
+      margin-left: 31%;
+      margin-right: 31%;
+   }
+}
+
+/* [MD] Medium devices (landscape tablets) | < 992px | */
+@media only screen and (max-width: 993px) {
+
+}
+
+/* [Custom] < 954px | */
+@media only screen and (max-width: 954px) {
+   .about-nav-container {
+      margin-left: 27%;
+      margin-right: 27%;
+   }
+}
+
+/* [Custom] < 788px | */
+@media only screen and (max-width: 788px) {
+   .about-nav-container {
+      margin-left: 22%;
+      margin-right: 22%;
+   }
+}
+
+/* [SM] Small devices (portrait tablets and large phones) | < 768px | */
+@media only screen and (max-width: 768px) {
+   #geografis .about-image {
+      width: 550px;
+   }
+}
+
+/* [Custom] < 647px | */
+@media only screen and (max-width: 647px) {
+   .about-nav-container {
+      margin-left: 18%;
+      margin-right: 18%;
+   }
+}
+
+/* [XS] Extra small devices (phones) | < 575px | */
+@media only screen and (max-width: 575px) {
+   #geografis .about-image {
+      width: 450px;
+   }
+   .about-nav-container {
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+}
+
+
+/* [Custom] < 473px | */
+@media only screen and (max-width: 473px) {
+   #geografis .about-image {
+      width: 350px;
+   }
+   .about-nav-container {
+      margin-left: 2%;
+      margin-right: 2%;
+   }
+}
+
+/* [Custom] < 377px | */
+@media only screen and (max-width: 377px) {
+   .about-nav-item {
+      width: 80px;
+      margin-left: 8px;
+   }
+   .about-nav-item i {
+      font-size: 22px;
+   }
+   .about-nav-text {
+      font-size: 12px;
+   }
+}
+
+/* [Custom] < 363px | */
+@media only screen and (max-width: 363px) {
+   #geografis .about-image {
+      width: 300px;
+   }
+}
+
+/* [Custom] < 329px | */
+@media only screen and (max-width: 329px) {
+   .about-nav-item {
+      width: 60px;
+   }
+   .about-nav-text {
+      display: none;
+   }
+}
+
+
+/* [Custom] < 320px | */
+@media only screen and (max-width: 320px) {
+   #geografis .about-image {
+      width: 250px;
+   }
+}
+
+/* [Custom] < 273px | */
+@media only screen and (max-width: 273px) {
+   #geografis .about-image {
+      width: 200px;
+   }
+}
+
+/* [Custom] < 267px | */
+@media only screen and (max-width: 267px) {
+   .about-nav-container {
+      border-radius: 16px;
+      padding: 8px 16px;
+   }
+   .about-nav-item {
+      width: 50px;
+   }
+   .about-nav-item i {
+      font-size: 20px;
+   }
+}
+
+/* [Custom] < 219px | */
+@media only screen and (max-width: 219px) {
+   .about-nav-container {
+      border-radius: 16px;
+      padding: 8px 16px;
+   }
+   .about-nav-item {
+      width: 42px;
+   }
+   .about-nav-item i {
+      font-size: 18px;
+   }
+}
