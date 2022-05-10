@@ -6,7 +6,7 @@ function pageOne() {
 
 $(function() {
    $('#selector').pagination({
-         items: 3,
+         items: 4,
          itemsOnPage: 1,
          cssStyle: 'wisatakendal-theme',
          currentPage: 1,
