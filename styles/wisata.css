@@ -79,6 +79,10 @@
    padding-left: 34px !important;
 }
 
+.wisata-info-location .kuliner-info-bahan-main {
+   padding-left: 34px !important;
+}
+
 .wisata-info-main h4 {
    color: #386387;
    font-family: 'Poppins', sans-serif;
@@ -170,6 +174,10 @@
    text-decoration: none;
 } .wisata-source cite a:hover {
    color: #386387;
+}
+
+.maps-link {
+   color: #EB757E;
 }
 
 
